@@ -14,6 +14,7 @@ from exceptions import (
     HomeworkEmptyError,
     ParseStatusError,
     ResponseError,
+    ResponseTypeError,
     TelegramSendingProblemError
 )
 
@@ -76,7 +77,7 @@ def get_api_answer(current_timestamp: int) -> dict:
 def check_response(response: dict) -> list:
     """Возвращает список домашних работ."""
     if not isinstance(response, dict):
-        raise ResponseError('Ответ от API не является словарем')
+        raise ResponseTypeError('Ответ от API не является словарем')
 
     if 'homeworks' not in response:
         raise ResponseError('Ключа "homeworks" нет в ответе от API')

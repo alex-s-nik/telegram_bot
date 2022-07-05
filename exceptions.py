@@ -10,9 +10,11 @@ class APIWrongStatusError(Exception):
 class ResponseError(Exception):
     pass
 
-class ParseStatusError(Exception):
+class ResponseTypeError(TypeError):
     pass
 
+class ParseStatusError(KeyError):
+    pass
 
 class HomeworkEmptyError(Exception):
     pass
