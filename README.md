@@ -9,7 +9,8 @@
 
 ### Технологии
 Python telegram bot
-### 
+
+### Установка
 После клонирования репозитория необходимо подготовить .env-файл вида:
 ```
 PRACTICUM_TOKEN=<practicum_token>
@@ -18,7 +19,9 @@ TELEGRAM_CHAT_ID=<telegram_chat_id>
 ```
 где
 PRACTICUM_TOKEN - можно получить по адресу: https://oauth.yandex.ru/authorize?response_type=token&client_id=1d0b9dd4d652455a9eb710d450ff456a.
+
 TELEGRAM_TOKEN - токен для работы с Bot API. Можно получить от @BotFather
+
 TELEGRAM_CHAT_ID — это ID того чата, в который бот должен отправить сообщение.
 
 ### Автор
